@@ -1,0 +1,1081 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e1e1;
+    
+}
+
+.contenedor {
+    max-width: 0px;
+    margin: 0 ;
+    padding: 0;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+}
+
+.header {
+    background-color: #fdfcfc;
+    position: fixed;
+    top: 0; /* Posicionar el encabezado en la parte superior */
+    width: 100%; /* Establecer el ancho al 100% */
+    z-index: 1000;
+}
+.texto6-centrado {
+    text-align: center;
+    padding: 20px; /* Ajusta el espaciado según lo necesites */
+    background: yellow;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 90px;
+    height: 90px;
+    margin-left: 50px;
+    
+}
+.logo-container .btnoticias{
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    background: rgb(48, 47, 47);
+    color: #f3ebeb;
+    border-radius: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo-container .btdonacion{
+    position: absolute;
+    left: 90%;
+    transform: translateX(-50%);
+    background: rgb(48, 47, 47);
+    color: #f8f9f7;
+    border-radius: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444; 
+    padding: 10px 0; 
+}
+
+.menus {
+    position: relative;
+}
+
+.desplegar {
+    background-color: transparent;
+    border: none;
+    color: #f4f2f2;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+
+.menus-contenido {
+    display: none;
+    position: absolute;
+    background-color: #d24141;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menus-contenido a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menus:hover .menus-contenido {
+    display: block;
+    opacity: 1;
+}
+.menus-contenido a:hover {
+    background-color: #121212;
+    border: 2px solid #151313; 
+    padding: 10px;
+}
+.filas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(1, 1, 31);
+    margin-top: 70px;
+}
+
+.centrado {
+    text-align: center;
+}
+.filas h2{
+    color: aliceblue;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.contacto{
+    background-color: rgb(1, 1, 31);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+.contacto li a{
+    color: wheat;
+}
+.nosotros,
+.enlaces {
+    background-color: rgb(1, 1, 31);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Ajusta la distribución de las columnas */
+}
+
+.contacto ul,
+.nosotros ul,
+.enlaces ul {
+    list-style: none;
+    padding: 0;
+    color: wheat;
+}
+
+.contacto h2,
+.nosotros h2,
+.enlaces h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #f4f2f2;
+}
+
+.distribucion {
+    display: flex;
+    justify-content: space-around; 
+    width: 80%; 
+    margin-top: 20px;
+}
+.enlaces ul li a{
+    color: wheat;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d0539;
+    padding: 20px;
+}
+
+.texto {
+    flex: 1;
+    color: #fff;
+}
+
+.imagenes-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: #fbf2f2; 
+    transition: color 0.3s;
+}
+.imagenes-icon i:hover {
+    color: #b6b613;
+}
+
+.imagenes-icon i {
+    margin: 0 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.imagen {
+    flex: 1;
+    text-align: right;
+}
+
+.imagen img {
+    width: 150px;
+    height: auto;
+    padding-right: 110px;
+}
+/*estilos para opcion filosofia*/
+.filosofiainfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+.centro {
+    margin-bottom: 20px; 
+}
+
+.abajo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+.img_filosofia3 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 300px; /* Ancho de la imagen */
+    height: 300px; /* Altura de la imagen */
+}
+
+.img_filosofia3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    background-color: #000000;
+    transition: opacity 0.3s; /* Transición de opacidad */
+}
+
+.img_filosofia3:hover img {
+    opacity: 0.7; /* Opacidad de la imagen al pasar el cursor */
+}
+
+.img_filosofia3 h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white; /* Color del texto */
+    z-index: 1; /* Capa superior */
+    opacity: 1; /* Mostrar inicialmente */
+    transition: opacity 0.3s; /* Transición de opacidad */
+}
+
+.img_filosofia3:hover h3 {
+    opacity: 0; /* Ocultar al pasar el cursor */
+}
+
+.img_filosofia3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 15, 96, 0.7); /* Color de fondo semi-transparente */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición de opacidad */
+    text-align: center;
+    padding-top: 50px; /* Espacio superior */
+    box-sizing: border-box;
+}
+
+.img_filosofia3:hover .overlay {
+    opacity: 1; /* Mostrar al pasar el cursor */
+}
+
+.img_filosofia3 p {
+    color: white; /* Color del texto */
+    padding: 0 20px; /* Espacio alrededor del texto */
+}
+/*secccion 1 carrusel */
+.efectoimagen {
+    position: relative;
+    overflow: hidden;
+    margin-top: -17px;
+}
+
+.efecto-contenido {
+    transition: transform 0.5s ease;
+}
+
+.efecto-contenido img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.efectoimagen img:first-child {
+    display: block;
+}
+
+.efectoimagen .prev,
+.efectoimagen .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(14, 13, 8);
+    color: #fdfcfc;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.contenido-imagen {
+    position: relative;
+    display: inline-block;
+}
+.botonimg2,
+.boton4,
+.boton5,
+.boton6,
+.boton7,
+.boton8,
+.boton9,
+.boton10,
+.boton11 {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fbf9f9;
+    color: #080505;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.inscribite{
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.boton{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f2f2;
+    color: #0a0101;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.informes{
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.texto-imagen2,
+.texto-imagen4,
+.texto-imagen5,
+.texto-imagen6,
+.texto-imagen7,
+.texto-imagen8,
+.texto-imagen10,
+.texto-imagen11 {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 70px;
+    text-align: center;
+    white-space: nowrap;
+}
+.info {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    margin-top: 70px;
+}
+
+.contenido {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos de contenido al principio */
+}
+
+.texto1 {
+    flex: 1; /* El texto ocupa todo el espacio restante */
+    padding-left: 70px;
+    color: #000;
+    font-size: 20px;
+}
+.imagenniña{
+    position: relative;
+}
+
+
+.imagenniña img {
+    width: 550px; /* Tamaño de la imagen */
+    height: auto;
+    padding-right: 12px;
+}
+
+.membresia {
+    position: absolute;
+    bottom: 0; /* Pegado en la parte inferior de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #040303;
+    background-color: #a89911;
+    font-size: 20px;
+    padding: 9px 80px; 
+    white-space: nowrap;
+}
+/* seccion principales programas*/
+.programas1 {
+    text-align: center; /* Centra el contenido horizontalmente */
+    font-size: 20px;
+    color: rgb(89, 89, 176);
+    margin-top: 70px;
+}
+
+.contenido1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+.contenido1 h3{
+    color: #0056b3;
+    font-size: 30px;
+}
+
+.programas-container {
+    display: flex;
+    flex-wrap: nowrap; /* No permite el ajuste de línea para que estén en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.programa {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 70px; /* Espacio entre cada programa */
+}
+
+.programa img {
+    width: 170px; /* Tamaño de las imágenes */
+    height: auto;
+}
+/*********************************/
+.accion-social {
+    text-align: center; /* Centra el contenido horizontalmente */
+    font-size: 20px;
+    color: rgb(89, 89, 176);
+    margin-top: 70px;
+}
+
+.contenido2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+.contenido2 h3{
+    color: #0056b3;
+    font-size: 30px;
+}
+
+.accion-container {
+    display: flex;
+    flex-wrap: nowrap; /* No permite el ajuste de línea para que estén en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+.programa-social p{
+    color: black;
+}
+
+.programa-social {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 70px; /* Espacio entre cada programa */
+}
+
+.programa-social img {
+    width: 170px; /* Tamaño de las imágenes */
+    height: auto;
+}
+/***********/
+.videos {
+    text-align: center;
+    margin-top: 70px;
+}
+.contenido3 h2{
+    font-size: 30px;
+    color: #0056b3;
+}
+
+.contenido3 {
+    margin: auto;
+    max-width: 800px; /* Ancho máximo del contenido */
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita que los videos se ajusten a múltiples líneas */
+}
+
+.video {
+    margin: 10px; /* Espacio entre los videos */
+}
+
+.video iframe {
+    width: 250px; /* Ancho del video */
+    height: 200px; /* Altura del video */
+}
+.ver-mas {
+    text-align: center;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.ver-mas button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f90606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ver-mas button:hover {
+    background-color: #0056b3;
+}
+/******************/
+.nuestros-proyectos {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.nuestros-proyectos h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #0056b3;
+}
+
+.fila-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.imagen-contenedor {
+    position: relative;
+}
+
+.contenido4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boton-imagen {
+    position: absolute;
+    bottom: 10px;
+    right: 150px;
+    background-color: #1db5e3;
+    border: 1px solid rgb(236, 236, 250);
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.estilo {
+    flex: 1;
+}
+
+.estilo img {
+    width: 60%;
+    height: auto;
+}
+
+.video1 {
+    flex: 1;
+}
+
+.video1 iframe {
+    width: 90%;
+    height: 100%;
+}
+/*colaboradores seccion*/
+.colaboradores1 {
+    text-align: center; /* Centrar el contenido dentro de la sección */
+    margin-top: 70px;
+}
+
+.colaboradores1 h2 {
+    margin-bottom: 20px; /* Margen inferior del título */
+    font-size: 30px;
+    color: #0056b3;
+}
+.carrusel1-container {
+    max-width: 1500px;
+    width: 100%;
+    position: relative;
+}
+.carrusel1-container i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .carrusel1-container i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .carrusel1-container i:first-child{
+    left: -2px;
+  }
+  .carrusel1-container i:last-child{
+    right: -2px;
+  }
+  .carrusel1-container .contenido-carru{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 70px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .contenido-carru::-webkit-scrollbar {
+    display: none;
+  }
+  .contenido-carru.no-transition {
+    scroll-behavior: auto;
+  }
+  .contenido-carru.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .contenido-carru.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .contenido-carru :where(.card, .conten-img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-carru .card {
+    scroll-snap-align: start;
+    height: 300px;
+    list-style: none;
+    cursor: pointer;
+    background: #efe5d5;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .contenido-carru .card .conten-img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card .conten-img img {
+    width: 340px;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 4px solid #000000;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .carrusel1-container .contenido-carru {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .carrusel1-container .contenido-carru {
+      grid-auto-columns: 100%;
+    }
+  }
+
+/* seccion agenda*/
+.agenda {
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-agenda {
+    display: flex;
+    flex-direction: column;
+}
+.texto-agenda {
+    text-align: right;
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.imagen-content1 {
+    display: flex;
+    flex-direction: row; /* Cambiado a fila */
+    justify-content: space-between; /* Ajusta el espacio entre las imágenes */
+    align-items: flex-start; /* Alinea las imágenes arriba */
+    margin-top: 20px;
+}
+.imagenes-ag{
+    text-align: center;
+}
+
+.imagenes-ag img {
+    max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-bottom: 10px; 
+}
+/*pagos section*/
+.pagos {
+    text-align: center; /* Centrar el contenido dentro de la sección */
+    margin-top: 70px;
+}
+
+.pagos h2 {
+    margin-bottom: 20px; /* Margen inferior del título */
+    font-size: 30px;
+    color: #0056b3;
+}
+.carrusel2-pagos {
+    max-width: 1500px;
+    width: 100%;
+    position: relative;
+}
+
+.carrusel2-pagos i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.carrusel2-pagos i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+.carrusel2-pagos i:first-child{
+    left: -2px;
+}
+.carrusel2-pagos i:last-child{
+    right: -2px;
+}
+.carrusel2-pagos .colaboradores-pago{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 70px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.colaboradores-pago::-webkit-scrollbar {
+    display: none;
+}
+.colaboradores-pago.no-transition {
+    scroll-behavior: auto;
+}
+.colaboradores-pago.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.colaboradores-pago.dragging .card2 {
+    cursor: grab;
+    user-select: none;
+}
+.colaboradores-pago :where(.card2, .pagos-img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colaboradores-pago .card2 {
+    scroll-snap-align: start;
+    height: 300px;
+    list-style: none;
+    cursor: pointer;
+    background: #efe5d5;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.colaboradores-pago .card2 .pagos-img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+}
+.card2 .pagos-img img {
+    width: 340px;
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 4px solid #000000;
+}
+  
+@media screen and (max-width: 900px) {
+    .carrusel2-pagos .colaboradores-pago {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .carrusel2-pagos .colaboradores-pago {
+      grid-auto-columns: 100%;
+    }
+}
+.btn-pagos {
+    text-align: center;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.btn-pagos button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #116d05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pagos button:hover {
+    background-color: #0056b3;
+}
+/*estilos historia*/
+.historia-1 {
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.historia-1 img {
+    display: block;
+    margin: auto;
+}
+.historia-1 h2{
+    color: #0056b3;
+    font-size: 40px;
+}
+.img-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-history img {
+    width: 30%; /* Ajustar el ancho de las imágenes para que quepan tres por fila */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+/*estilos de transparencia y transporte*/
+.transparencia {
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.transparencia h2{
+    color: #0056b3;
+    font-size: 40px;
+}
+.img-tranparencia {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.img-tranparencia a {
+    display: inline-block;
+    width: 120px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.img-tranparencia p {
+    font-size: 0.9em; /* Tamaño de la fuente del texto */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+
+.img-tranparencia i {
+    font-size: 4em; /* Tamaño del icono */
+    color: rgb(233, 109, 8); /* Color del icono */
+}
+/*marco institucional*/
+.marco-institucional {
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.marco-institucional h2{
+    color: #0056b3;
+    font-size: 35px;
+}
+.marco-btn {
+    display: flex; /* Establecer el contenedor como flexbox */
+    justify-content: space-between; /* Distribuir los elementos uniformemente en el espacio disponible */
+}
+.documento {
+    width: calc(33.33% - 10px); /* Establecer el ancho de cada botón, restando un margen entre ellos */
+    margin-right: 10px; /* Agregar un margen entre los botones */
+    background: red;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: red;
+}
+.documento:hover{
+    background: #0056b3;
+}
+/*estilos objetivos*/
+.objetivos-1{
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.img-objetivos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.img-objetivos img {
+    max-width: 100%; /* Tamaño máximo de las imágenes */
+    height: auto;
+    flex: 1; /* Ocupar el mismo espacio dentro del contenedor */
+}
+
+@media (min-width: 768px) {
+    .img-objetivos img {
+        flex-basis: calc(50% - 10px); /* 50% del ancho del contenedor menos el espacio entre las imágenes */
+    }
+}
+
+/*base social estilos*/
+.base-social1 {
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.base-social1 h2{
+    color: #0056b3;
+    font-size: 35px;
+}
+/*saludo estilos*/
+.content-saludo {
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+/*estructura estilos*/
+.estructura-1{
+    padding-top: 2%;
+    max-width: 56%;
+    font-size: 103%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.estructura-1 h2{
+    color: #0056b3;
+    font-size: 35px;
+}
+.estructura-2 {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos a lo largo de la línea flex */
+}
+.cuadro-blanco {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho del cuadro blanco */
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.img-estructura {
+    text-align: center;
+    
+   
+}
+
+.img-estructura img {
+    width: 100px; /* Ancho de la imagen */
+    border-radius: 50%; /* Para hacerla circular, ajusta según necesites */
+    margin-bottom: 10px;
+}
+
+.img-estructura h2 {
+    margin: 0;
+    font-size: 1.2em; /* Tamaño de fuente del título */
+}
+
+.img-estructura p {
+    margin: 5px 0;
+    font-size: 0.9em; /* Tamaño de fuente del párrafo */
+}
+
+.img-estructura a {
+    color: inherit; /* Para heredar el color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.img-estructura i {
+    font-size: 1.5em; /* Tamaño del icono */
+}
